@@ -179,61 +179,61 @@ require '../init.php';
       <div class="main-items row">
 
         <div class="card mb-3 col-md-5 col-lg-3 mx-1">
-          <img src="image/productdetailsimg.jpg">
+          <img src="<?=url("assets/image/productdetailsimg.jpg")?>">
           <div class="product_header">wood Recycleing</div>
           <div class="product-location"> Egypt</div>
         </div>
 
         <div class="card mb-3 col-md-5 col-lg-3 mx-1">
-          <img src="image/productdetailsimg.jpg">
+          <img src="<?=url("assets/image/productdetailsimg.jpg")?>">
           <div class="product_header">Paper Recycleing</div>
           <div class="product-location"> Egypt</div>
         </div>
 
         <div class="card mb-3 col-md-5 col-lg-3 mx-1">
-          <img src="image/productdetailsimg.jpg">
+          <img src="<?=url("assets/image/productdetailsimg.jpg")?>">
           <div class="product_header">Electroic Recycleing</div>
           <div class="product-location"> Egypt</div>
         </div>
 
         <div class="card mb-3 col-md-5 col-lg-3 mx-1">
-          <img src="image/productdetailsimg.jpg">
+          <img src="<?=url("assets/image/productdetailsimg.jpg")?>">
           <div class="product_header">car tire Recycleing</div>
           <div class="product-location"> Egypt</div>
         </div>
 
         <div class="card mb-3 col-md-5 col-lg-3 mx-1">
-          <img src="image/productdetailsimg.jpg">
+          <img src="<?=url("assets/image/productdetailsimg.jpg")?>">
           <div class="product_header">table</div>
           <div class="product-location"> Egypt</div>
         </div>
 
         <div class="card mb-3 col-md-5 col-lg-3 mx-1">
-          <img src="image/productdetailsimg.jpg">
+          <img src="<?=url("assets/image/productdetailsimg.jpg")?>">
           <div class="product_header">Palm trees</div>
           <div class="product-location"> Egypt</div>
         </div>
 
         <div class="card mb-3 col-md-5 col-lg-3 mx-1">
-          <img src="image/productdetailsimg.jpg">
+          <img src="<?=url("assets/image/productdetailsimg.jpg")?>">
           <div class="product_header">Palm trees</div>
           <div class="product-location"> Egypt</div>
         </div>
 
         <div class="card mb-3 col-md-5 col-lg-3 mx-1">
-          <img src="image/productdetailsimg.jpg">
+          <img src="<?=url("assets/image/productdetailsimg.jpg")?>">
           <div class="product_header">wood Recycleing</div>
           <div class="product-location"> Egypt</div>
         </div>
 
         <div class="card mb-3 col-md-5 col-lg-3 mx-1">
-          <img src="image/productdetailsimg.jpg">
+          <img src="<?=url("assets/image/productdetailsimg.jpg")?>">
           <div class="product_header">wood Recycleing</div>
           <div class="product-location"> Egypt</div>
 
         </div>
         <div class="card mb-3 col-md-5 col-lg-3 mx-1">
-          <img src="image/productdetailsimg.jpg">
+          <img src="<?=url("assets/image/productdetailsimg.jpg")?>">
           <div class="product_header">wood Recycleing</div>
           <div class="product-location"> Egypt</div>
 

@@ -171,7 +171,7 @@ require('../init.php');
         <div class="blog mb-3 col-md-5 col-lg-3 mx-1">
 
           <div class="first">
-            <a><img src="./image/Recycling-amico.svg " class="card-img-top"></a>
+            <a><img src="<?=url("")?>assets/image/Recycling-amico.svg " class="card-img-top"></a>
           </div>
           <div class="content ">
             <h4>Paper Recycling</h4>
@@ -186,23 +186,7 @@ require('../init.php');
         <div class="blog mb-3 col-md-5 col-lg-3 mx-1 ">
 
           <div class="first">
-            <a><img src="./image/Recycling-amico.svg " class="card-img-top"></a>
-          </div>
-          <div class="content ">
-            <h4>Paper Recycling</h4>
-            <div class="content_p">
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. In incidunt alias repellendus, similique
-                voluptatum minima, fugiat magni </p>
-            </div>
-            <div class="content_date"><span>6-jan-2023</span></div>
-          </div>
-        </div>
-
-
-        <div class="blog mb-3 col-md-5 col-lg-3 mx-1 ">
-
-          <div class="first">
-            <a><img src="./image/Recycling-amico.svg " class="card-img-top"></a>
+            <a><img src="<?=url("")?>assets/image/Recycling-amico.svg " class="card-img-top"></a>
           </div>
           <div class="content ">
             <h4>Paper Recycling</h4>
@@ -218,7 +202,23 @@ require('../init.php');
         <div class="blog mb-3 col-md-5 col-lg-3 mx-1 ">
 
           <div class="first">
-            <a><img src="./image/Recycling-amico.svg " class="card-img-top"></a>
+            <a><img src="<?=url("")?>assets/image/Recycling-amico.svg " class="card-img-top"></a>
+          </div>
+          <div class="content ">
+            <h4>Paper Recycling</h4>
+            <div class="content_p">
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. In incidunt alias repellendus, similique
+                voluptatum minima, fugiat magni </p>
+            </div>
+            <div class="content_date"><span>6-jan-2023</span></div>
+          </div>
+        </div>
+
+
+        <div class="blog mb-3 col-md-5 col-lg-3 mx-1 ">
+
+          <div class="first">
+            <a><img src="<?=url("")?>assets/image/Recycling-amico.svg " class="card-img-top"></a>
           </div>
           <div class="content ">
             <h4>Paper Recycling</h4>
@@ -235,7 +235,7 @@ require('../init.php');
         <div class="blog mb-3 col-md-5 col-lg-3 mx-1 ">
 
           <div class="first">
-            <a><img src="./image/Recycling-amico.svg " class="card-img-top"></a>
+            <a><img src="<?=url("assets/image/Recycling-amico.svg ")?>" class="card-img-top"></a>
           </div>
           <div class="content ">
             <h4>Paper Recycling</h4>
@@ -251,7 +251,7 @@ require('../init.php');
         <div class="blog mb-3 col-md-5 col-lg-3 mx-1 ">
 
           <div class="first">
-            <a><img src="./image/Recycling-amico.svg " class="card-img-top"></a>
+            <a><img src="<?=url("assets/image/Recycling-amico.svg ")?>" class="card-img-top"></a>
           </div>
           <div class="content ">
             <h4>Paper Recycling</h4>
@@ -267,7 +267,7 @@ require('../init.php');
         <div class="blog mb-3 col-md-5 col-lg-3 mx-1 ">
 
           <div class="first">
-            <a><img src="./image/Recycling-amico.svg " class="card-img-top"></a>
+            <a><img src="<?=url("assets/image/Recycling-amico.svg ")?>" class="card-img-top"></a>
           </div>
           <div class="content ">
             <h4>Paper Recycling</h4>
@@ -283,7 +283,7 @@ require('../init.php');
         <div class="blog  mb-3 col-md-5 col-lg-3 mx-1 ">
 
           <div class="first">
-            <a><img src="./image/Recycling-amico.svg " class="card-img-top"></a>
+            <a><img src="<?=url("assets/image/Recycling-amico.svg ")?>" class="card-img-top"></a>
           </div>
           <div class="content ">
             <h4>Paper Recycling</h4>
@@ -299,7 +299,7 @@ require('../init.php');
         <div class="blog  mb-3 col-md-5 col-lg-3 mx-1 ">
 
           <div class="first">
-            <a><img src="./image/Recycling-amico.svg " class="card-img-top"></a>
+            <a><img src="<?=url("assets/image/Recycling-amico.svg")?>" class="card-img-top"></a>
           </div>
           <div class="content ">
             <h4>Paper Recycling</h4>

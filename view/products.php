@@ -142,7 +142,7 @@
                 <!-- item1 -->
 
                 <div class="card col-md-6  col-lg-3 mb-3 ">
-                    <img src='image/productdetailsimg.jpg'
+                    <img src='<?=url("assets/image/productdetailsimg.jpg")?>'
                         width="300" height="200" class="img_item" title="" alt="recycle">
                     <div class="container">
                         <div class="product_header">
@@ -158,7 +158,7 @@
                 </div>
                 <!-- item2 -->
                 <div class="card col-md-6  col-lg-3 mb-3 ">
-                    <img src='image/productdetailsimg.jpg'
+                    <img src='<?=url("assets/image/productdetailsimg.jpg")?>'
                         height="200" class="img_item" title="" alt="recycle">
                     <div class="container">
                         <div class="product_header">
@@ -174,7 +174,7 @@
                 </div>
                 <!-- item 3 -->
                 <div class="card col-md-6 col-lg-3 mb-3 ">
-                    <img src='image/productdetailsimg.jpg'
+                    <img src='<?=url("assets/image/productdetailsimg.jpg")?>'
                         height="200" class="img_item" title="" alt="recycle">
                     <div class="container">
                         <div class="product_header">
@@ -196,7 +196,7 @@
 
                 <!-- item 4 -->
                 <div class="card col-md-6 col-lg-3 mb-3">
-                    <img src='image/productdetailsimg.jpg'
+                    <img src='<?=url("assets/image/productdetailsimg.jpg")?>'
                         width="300" height="200" class="img_item" title="" alt="recycle">
                     <div class="container">
                         <div class="product_header">
@@ -212,7 +212,7 @@
                 </div>
                 <!-- item 5 -->
                 <div class="card col-md-6 col-lg-3 mb-3">
-                    <img src='image/productdetailsimg.jpg'
+                    <img src='<?=url("assets/image/productdetailsimg.jpg")?>'
                         width="300" height="200" class="img_item" title="" alt="recycle">
                     <div class="container">
                         <div class="product_header">
@@ -228,7 +228,7 @@
                 </div>
                 <!-- item 6 -->
                 <div class="card col-md-6 col-lg-3 mb-3">
-                    <img src='image/productdetailsimg.jpg'
+                    <img src='<?=url("assets/image/productdetailsimg.jpg")?>'
                         width="300" height="200" class="img_item" title="" alt="recycle">
                     <div class="container">
                         <div class="product_header">
@@ -250,7 +250,7 @@
 
                 <!-- item 7 -->
                 <div class="card col-md-6 col-lg-3 mb-3">
-                    <img src='image/productdetailsimg.jpg'
+                    <img src='<?=url("assets/image/productdetailsimg.jpg")?>'
                         width="300" height="200" class="img_item" title="" alt="recycle">
                     <div class="container">
                         <div class="product_header">
@@ -266,7 +266,7 @@
                 </div>
                 <!-- item 8 -->
                 <div class="card col-md-6 col-lg-3 mb-3">
-                    <img src='image/productdetailsimg.jpg'
+                    <img src='<?=url("assets/image/productdetailsimg.jpg")?>'
                         width="300" height="200" class="img_item" title="" alt="recycle">
                     <div class="container">
                         <div class="product_header">
@@ -282,7 +282,7 @@
                 </div>
                 <!-- item 9 -->
                 <div class="card col-md-6 col-lg-3 mb-3">
-                    <img src='image/productdetailsimg.jpg'
+                    <img src='<?=url("assets/image/productdetailsimg.jpg")?>'
                         height="200" class="img_item" title="" alt="recycle">
                     <div class="container">
                         <div class="product_header">
