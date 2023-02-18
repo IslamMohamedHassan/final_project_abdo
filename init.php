@@ -1,4 +1,3 @@
 <?php
-require_once('src/helper.php');
-
-
+require('src/helper.php');
+require('src/database.php');

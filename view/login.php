@@ -1,22 +1,6 @@
 <?php
-    
-
-
-
-
-
-
+    require('../init.php');
 ?>
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -191,7 +175,7 @@ form {
                 <a href="account.html">Register</a>
             </div> 
             <div class="tabs ">
-                <form action="../index.php" method="post" >
+                <form action="<?= url('controller/login.php')?>" method="post" >
                     <div class="inputs">
                             <div class="input">
                                 <input id="email" name="email" placeholder="Email" type="email">
@@ -206,15 +190,13 @@ form {
                     </div>
                     <button type="submit" id="loginBtn" name="login">Login</button>
                 </form> 
-                
-
     </div>   
         </div>
     </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-<script src="js/login.js"></script>
+<script src="<?= url("assets/js/login.js")?>"></script>
 </body>
 
 </html> 

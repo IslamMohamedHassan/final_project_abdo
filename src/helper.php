@@ -19,3 +19,11 @@ function path ($path=""){
     preg_match('/[^\/]+/',$url  , $new_url); 
     return  $_SERVER['DOCUMENT_ROOT'].'/'.$new_url[0].'/'.$path;
 }
+
+function getConfig ($configSection){
+    $configFile = file_get_contents(path('env.json'));
+    return json_decode($configFile)->$configSection;
+}
+
+//sessions
+//cockies

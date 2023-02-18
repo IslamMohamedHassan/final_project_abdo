@@ -1,5 +1,5 @@
 <?php
-  require_once('../init.php');
+  require('../init.php');
 ?>
 
 
@@ -115,8 +115,8 @@
           </div>
             <div class="head-login col-6 col-md-7 ">
               <div class="login row ">
-                <a class="mb-1 p-2 p-md-3  col-md-3 text-center " href="./login.html">LogIn</a>
-                <a class="mb-1 p-2 p-md-3  col-md-3 text-center" href="./account.html">SignUp</a>
+                <a class="mb-1 p-2 p-md-3  col-md-3 text-center " href="<?=url("view/login.php")?>">LogIn</a>
+                <a class="mb-1 p-2 p-md-3  col-md-3 text-center" href="<?= url("")?>">SignUp</a>
                 <a class="mb-1 p-2 p-md-3  col-md-3 text-center"  href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
               </div>
           </div>
@@ -136,7 +136,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item p-lg-2">
-              <a class="nav-link" href="./index.html">HOME</a>
+              <a class="nav-link" href="<?=url("view/home.php")?>">HOME</a>
             </li>
             <li class="nav-item p-lg-2">
               <a class="nav-link" href="./blog.html" >BLOG</a>
@@ -168,11 +168,11 @@
           </div>
         
           <div class="mySlides fade">
-            <img src="./image/Recycling-amico.svg">
+            <img src="<?= url("assets/image/Recycling-amico.svg")?>">
           </div>
         
           <div class="mySlides fade">
-            <img src="./image/Recycling-pana.svg">
+            <img src="<?= url("assets/image/Recycling-pana.svg")?>">
           </div>
         </div>    
       </div>
