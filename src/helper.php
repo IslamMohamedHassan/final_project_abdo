@@ -26,7 +26,7 @@ function getConfig ($configSection){
 }
 
 function redirect($url){
-    return header("location: $url");
+    return header("location: ".url($url));
 }
 function sessionKey($key, $value){
     $_SESSION[$key]= $value; 
@@ -37,22 +37,20 @@ function sessionKeyMany(array $keysValues){
     }
 }
 function session ($key=NULL){
-    if(isset($_SESSION) && $key!=NULL){
+    if(isset($_SESSION[$key]) && $key!=NULL){
         return $_SESSION[$key]; 
     }else if (isset($_SESSION)){
         return $_SESSION;
     }
 }
 function sessionRemove($key){
-    if(isset($_SESSION)){
+    if(isset($_SESSION[$key])){
         unset($_SESSION[$key]);
     }
 }
 function sessionRemoveMany(array $keys){
-    if(isset($_SESSION)){
-        foreach ($keys as $key){
-            unset($_SESSION[$key]);
-        }
+    foreach ($keys as $key){
+        if (isset($_SESSION[$key])) unset($_SESSION[$key]);
     }
 }
 

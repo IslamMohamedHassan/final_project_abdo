@@ -1,5 +1,7 @@
 <?php
   require('../init.php');
+  //view var 
+  include(path('controller/home.php')); 
 ?>
 
 
@@ -115,8 +117,10 @@
           </div>
             <div class="head-login col-6 col-md-7 ">
               <div class="login row ">
-                <a class="mb-1 p-2 p-md-3  col-md-3 text-center " href="<?=url("view/login.php")?>">LogIn</a>
-                <a class="mb-1 p-2 p-md-3  col-md-3 text-center" href="<?= url("view/account.php")?>">SignUp</a>
+                <label for=""><?=$userName?></label>
+                <a <?= $loginStatus?> class="mb-1 p-2 p-md-3  col-md-3 text-center " href="<?=url("view/login.php")?>">LogIn</a>
+                <a <?= $logoutStatus?> class="mb-1 p-2 p-md-3  col-md-3 text-center " href="<?=url("controller/logout.php")?>">LogOut</a>
+                <a <?= $loginStatus?> class="mb-1 p-2 p-md-3  col-md-3 text-center" href="<?= url("view/account.php")?>">SignUp</a>
                 <a class="mb-1 p-2 p-md-3  col-md-3 text-center"  href="<?= url("view/cart.php")?>"><i class="fa-solid fa-cart-shopping"></i></a>
               </div>
           </div>

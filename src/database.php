@@ -33,9 +33,9 @@ class DB {
         $values = '';
         foreach ($data as $key=>$value){
             $keys .= $key.',';
-            $values .= $value.',';
+            $values .= '\''.$value.'\''.',';
         }
-        $this->sql = "INSERT INTO $this->table ( ".rtrim($keys,',')." ) VALUES ( '".trim($values , ',')."' )";
+        $this->sql = "INSERT INTO $this->table ( ".rtrim($keys,',')." ) VALUES ( ".trim($values , ',')." )";
         return $this;  
     }
     public function select(string $column = '*'){
