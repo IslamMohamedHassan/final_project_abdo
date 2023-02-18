@@ -25,5 +25,36 @@ function getConfig ($configSection){
     return json_decode($configFile)->$configSection;
 }
 
+function redirect($url){
+    return header("location: $url");
+}
+function sessionKey($key, $value){
+    $_SESSION[$key]= $value; 
+}
+function sessionKeyMany(array $keysValues){
+    foreach($keysValues as $key=>$value){
+        $_SESSION[$key]=$value;
+    }
+}
+function session ($key=NULL){
+    if(isset($_SESSION) && $key!=NULL){
+        return $_SESSION[$key]; 
+    }else if (isset($_SESSION)){
+        return $_SESSION;
+    }
+}
+function sessionRemove($key){
+    if(isset($_SESSION)){
+        unset($_SESSION[$key]);
+    }
+}
+function sessionRemoveMany(array $keys){
+    if(isset($_SESSION)){
+        foreach ($keys as $key){
+            unset($_SESSION[$key]);
+        }
+    }
+}
+
 //sessions
 //cockies

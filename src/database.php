@@ -23,6 +23,10 @@ class DB {
     public function close(){
         $this->conn= NULL ; 
     }
+    public function raw (string $statment){
+        $this->connect(); 
+        return $this->conn->query($statment);
+    }
     public function insert (array $data){
         $this->connect();
         $keys = '';
@@ -34,7 +38,7 @@ class DB {
         $this->sql = "INSERT INTO $this->table ( ".rtrim($keys,',')." ) VALUES ( '".trim($values , ',')."' )";
         return $this;  
     }
-    public function select($column = '*'){
+    public function select(string $column = '*'){
         $this->connect();
         $this->sql.="SELECT $column FROM $this->table";
         return $this;
@@ -44,7 +48,7 @@ class DB {
         $this->sql = "DELETE FROM $this->table ";
         return $this;
     }
-    public function update($data){ 
+    public function update(array $data){ 
         $this->connect();
         $keysValues = '';
         foreach ($data as $key=>$value){
@@ -53,21 +57,21 @@ class DB {
         $this->sql = "UPDATE $this->table SET ".rtrim($keysValues , ',');
         return $this;
     }
-    public function where($condition){
+    public function where(string $condition){
         $this->sql .= " WHERE $condition "; 
         return $this; 
     }
-    public function leftJoin($tableToJoin , $relation){
+    public function leftJoin(string $tableToJoin , string $relation){
         $this->connect(); 
         $this->sql .= " LEFT JOIN $tableToJoin ON $relation";
         return $this;
     }
-    public function rightJoin($tableToJoin , $relation){
+    public function rightJoin(string $tableToJoin , string $relation){
         $this->connect(); 
         $this->sql .= " RIGHT JOIN $tableToJoin ON $relation";
         return $this;
     }
-    public function innerJoin($tableToJoin , $relation){
+    public function innerJoin(string $tableToJoin , string $relation){
         $this->connect(); 
         $this->sql .= " INNER JOIN $tableToJoin ON $relation";
         return $this;

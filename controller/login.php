@@ -1,6 +1,12 @@
 <?php
-require('../init.php'); 
+require ('../init.php');
 
-if ($_SERVER['REQUEST_METHOD']=="POST"){
-    echo "check"; 
+//login
+$login = auth::login(request()->email , request()->password);
+
+if ($login){
+    redirect(url('view/home.php'));
+}else {
+    redirect(url('view/login.php'));
 }
+

@@ -1,3 +1,7 @@
+<?php
+  require('../init.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,10 +10,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/headernavbarfooter.css">
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./css/normalize.css">  
+    <link rel="stylesheet" href="<?=url("assets/css/headernavbarfooter.css")?>">
+    <!-- <link rel="stylesheet" href="<?= url("assets/css/style.css")?>"> -->
+    <link rel="stylesheet" href="<?= url("assets/css/all.min.css")?> ">
+    <link rel="stylesheet" href="<?=url("assets/css/normalize.css") ?>">  
     <title>Document</title>
 
     <style>
@@ -75,54 +79,56 @@
     =====================================================-->
     <!-- new Header Top -->
     <div class="header-top">
-        <div class="container">
-          <div class="head">
-            <div class="head-logo ">
-                  <a href="./index.html"><i class="fa-solid fa-recycle"></i></a>
-                  <a href="./index.html">O</a>
-            </div>
-              <div class="head-login col-6 col-md-7 ">
-                <div class="login row ">
-                  <a class="mb-1 p-2 p-md-3  col-md-3 text-center " href="./login.html">LogIn</a>
-                  <a class="mb-1 p-2 p-md-3  col-md-3 text-center" href="./account.html">SignUp</a>
-                  <a class="mb-1 p-2 p-md-3  col-md-3 text-center"  href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="head">
+          <div class="head-logo ">
+                <a href="<./index.html"><i class="fa-solid fa-recycle"></i></a>
+                <a href="./index.html">O</a>
+          </div>
+            <div class="head-login col-6 col-md-7 ">
+              <div class="login row ">
+                <a class="mb-1 p-2 p-md-3  col-md-3 text-center " href="<?=url("view/login.php")?>">LogIn</a>
+                <a class="mb-1 p-2 p-md-3  col-md-3 text-center" href="<?= url("view/account.php")?>">SignUp</a>
+                <a class="mb-1 p-2 p-md-3  col-md-3 text-center"  href="<?= url("view/cart.php")?>"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
           </div>
         </div>
       </div>
-  
-      <!-- new navbar -->
-  
-      <nav class="navbar navbar-expand-lg nav_bar ">
-        <div class="container-fluid">
-          <button class="navbar-toggler navbar-light bg-light  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon   "></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item p-lg-2">
-                <a class="nav-link" href="./index.html">HOME</a>
-              </li>
-              <li class="nav-item p-lg-2">
-                <a class="nav-link" href="./blog.html" >BLOG</a>
-              </li>
-              <li class="nav-item p-lg-2">
-                <a class="nav-link" href="./items.html" >ITEMS</a>
-              </li>
-              <li class="nav-item p-lg-2">
-                <a class="nav-link" href="products.html" >PRODUCTS</a>
-              </li>
-              <li class="nav-item p-lg-2">
-                <a class="nav-link" href="./aboutus.html">ABOUT US</a>
-              </li>
-              <li class="nav-item p-lg-2">
-                <a class="nav-link" href="./contact.html">CONTACT US</a>
-              </li>
-            </ul>
-          </div>
+  </div>
+
+  <!-- end of header -->
+
+  <!-- new navbar -->
+
+  <nav class="navbar navbar-expand-lg nav_bar ">
+      <div class="container-fluid">
+        <button class="navbar-toggler navbar-light bg-light  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon   "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item p-lg-2">
+              <a class="nav-link" href="<?=url("view/home.php")?>">HOME</a>
+            </li>
+            <li class="nav-item p-lg-2">
+              <a class="nav-link" href="<?= url("view/blog.php")?>" >BLOG</a>
+            </li>
+            <li class="nav-item p-lg-2">
+              <a class="nav-link" href="<?= url("view/items.php")?>" >ITEMS</a>
+            </li>
+            <li class="nav-item p-lg-2">
+              <a class="nav-link" href="<?= url("view/products.php")?>" >PRODUCTS</a>
+            </li>
+            <li class="nav-item p-lg-2">
+              <a class="nav-link" href="<?= url("view/aboutus.php")?>">ABOUT US</a>
+            </li>
+            <li class="nav-item p-lg-2">
+              <a class="nav-link" href="<?= url("view/contact.php")?>">CONTACT US</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+  </nav>
 
     <!-- item-page -->
 
@@ -326,19 +332,18 @@
               </ul>
             </div>
             <div class="additional col-md-5   col-lg-4   ">
-              <h2 class="capital">additional pages</h2>
-              <ul class="">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./blog.html">Blog</a>
-                </li>
-                <li ><a href="./items.html">Items</a></li>
-                <li ><a href="./aboutus.html">About Us</a>
-                </li>
-                <li ><a href="./contactus">contact Us</a>
-                </li>
-              </ul>
-            </div>
-  
+            <h2 class="capital">additional pages</h2>
+            <ul class="">
+              <li><a href="<?= url("view/home.php")?>">Home</a></li>
+              <li><a href="<?= url("view/blog.php")?>">Blog</a>
+              </li>
+              <li ><a href="<?= url("view/items.php")?>">Items</a></li>
+              <li ><a href="<?= url("view/aboutus.php")?>">About Us</a>
+              </li>
+              <li ><a href="<?= url("view/contact.php")?>">contact Us</a>
+              </li>
+            </ul>
+          </div>
           </div>
         </div>
         <div class="copyright">

@@ -1,63 +1,63 @@
 var items =
     [
         {
-            image: "image/productdetailsimg.jpg",
+            image: "../assets/image/productdetailsimg.jpg",
             description: "wood Recycleing",
             location: " Egypt",
 
         }
         ,
         {
-            image: "image/productdetailsimg.jpg",
+            image: "../assets/image/productdetailsimg.jpg",
             description: "Paper Recycleing",
             location: " Egypt",
 
         }
         ,
         {
-            image: "image/productdetailsimg.jpg",
+            image: "../assets/image/productdetailsimg.jpg",
             description: "Electroic Recycleing",
             location: " Egypt",
 
         }
         ,
         {
-            image: "image/productdetailsimg.jpg",
+            image: "../assets/image/productdetailsimg.jpg",
             description: "car tire Recycleing",
             location: " Egypt",
 
         }
         ,
         {
-            image: "image/productdetailsimg.jpg",
+            image: "../assets/image/productdetailsimg.jpg",
             description: "table",
             location: " Egypt",
 
         }
         ,
         {
-            image: "image/productdetailsimg.jpg",
+            image: "../assets/image/productdetailsimg.jpg",
             description: "Palm trees",
             location: " Egypt",
 
         }
         ,
         {
-            image: "image/productdetailsimg.jpg",
+            image: "../assets/image/productdetailsimg.jpg",
             description: "Palm trees",
             location: " Egypt",
 
         }
         ,
         {
-            image: "image/productdetailsimg.jpg",
+            image: "../assets/image/productdetailsimg.jpg",
             description: "wood Recycleing",
             location: " Egypt",
 
         }
         ,
         {
-            image: "image/productdetailsimg.jpg",
+            image: "../assets/image/productdetailsimg.jpg",
             description: "wood Recycleing",
             location: " Egypt",
 
