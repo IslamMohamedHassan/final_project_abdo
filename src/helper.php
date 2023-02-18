@@ -56,5 +56,3 @@ function sessionRemoveMany(array $keys){
     }
 }
 
-//sessions
-//cockies
