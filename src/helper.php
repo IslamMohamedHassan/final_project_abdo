@@ -1,5 +1,5 @@
 <?php 
-
+umask(000); 
 function dd ($var){
     echo "<pre>"; 
     print_r($var);
@@ -54,3 +54,17 @@ function sessionRemoveMany(array $keys){
     }
 }
 
+function upload(string $file){
+    if(!isset($_FILES[$file]))return ; 
+    $currentDate = date('d-m-y_h:i:s'); 
+    $fileName = requestFile($file)->name; 
+    $filePath = requestFile($file)->tmp_name; 
+    $matches=[]; 
+    preg_match('/\.(\w|[^.])+$/' , $fileName, $matches); 
+    $extension = (count($matches))?$matches[0]:'';
+    move_uploaded_file($filePath, path('assets/upload/file_'.$currentDate.$extension)); 
+}
+
+function deleteFile(){
+    
+}

@@ -1,7 +1,7 @@
 <?php
 // $user="";
 // echo isset($usert);
-require_once("../connection.php");
+// require_once("../connection.php");
 // $action=isset($_GET["action"])?$_GET["action"]:"";
 
 // get all data from users
