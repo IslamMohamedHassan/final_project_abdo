@@ -77,7 +77,9 @@ class DB {
     }
     public function raw (string $statment){
         $this->connect(); 
-        return $this->conn->query($statment);
+        $res = $this->conn->query($statment);
+        $this->conn = NULL ; 
+        return $res; 
     }
     public function insert (array $data){
         $this->connect();

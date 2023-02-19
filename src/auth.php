@@ -4,7 +4,7 @@ class auth {
     public static function login($email , $password){
         $attemp = DB::table('users')->select()->where("email = '$email' and password = '$password'")->first();
         if ($attemp){
-            sessionKeyMany(['login'=>1 , 'user'=>$attemp->id]);
+            sessionKeyMany(['login'=>true , 'user'=>$attemp->id]);
             return true;
         }
         return false ; 
