@@ -65,6 +65,6 @@ function upload(string $file){
     move_uploaded_file($filePath, path('assets/upload/file_'.$currentDate.$extension)); 
 }
 
-function deleteFile(){
-    
+function deleteFile($file){
+    unlink(path($file)); 
 }
