@@ -1,16 +1,16 @@
 var blogs =
     [
         {
-            image :"./image/Recycling-amico.svg",
+            image :"../assets/image/Recycling-amico.svg",
             title: "Paper Recycling",
             description: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. In incidunt alias repellendus, similique voluptatum minima, fugiat magni " ,
             date:"6-jan-2023"
 
         }
-        ,
+        ,-
 
         {
-            image :"./image/Recycling-bro.svg",
+            image :"../assets/image/Recycling-bro.svg",
             title: "Plastic Recycling",
             description: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. In incidunt alias repellendus, similique voluptatum minima, fugiat magni " ,
             date:"6-jan-2023"
@@ -18,15 +18,15 @@ var blogs =
         }
         ,
         {
-            image :"./image/Recycling-pana.svg",
+            image :"../assets/image/Recycling-pana.svg",
             title: "Food Recycling",
             description: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. In incidunt alias repellendus, similique voluptatum minima, fugiat magni " ,
             date:"6-jan-2023"
 
         }
         ,
-        {
-            image :"./image/Recycling-bro.svg",
+        {                
+            image :"../assets/image/Recycling-bro.svg",
             title: "Home Recycling",
             description: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. In incidunt alias repellendus, similique voluptatum minima, fugiat magni " ,
             date:"6-jan-2023"
@@ -34,7 +34,7 @@ var blogs =
         }
         ,
         {
-            image :"./image/Recycling-amico.svg",
+            image :"../assets/image/Recycling-amico.svg",
             title: "Wood Recycling",
             description: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. In incidunt alias repellendus, similique voluptatum minima, fugiat magni " ,
             date:"6-jan-2023"
@@ -42,14 +42,12 @@ var blogs =
         }
         ,
         {
-            image :"./image/Recycling-rafiki.svg",
+            image :"../assets/image/Recycling-rafiki.svg",
             title: "Electronic Recycling",
             description: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. In incidunt alias repellendus, similique voluptatum minima, fugiat magni " ,
             date:"6-jan-2023"
 
         }
-        ,
-        
 
     ]
 
