@@ -11,7 +11,7 @@ class auth {
     }
     public static function user (){
         if (session('user')){
-            return  DB::table('users')->select('id , name , email')->where("id = ".session('user'))->first(); 
+            return  DB::table('users')->select()->where("id = ".session('user'))->first(); 
         }
     }
     public static function logout(){

@@ -1,7 +1,13 @@
 <?php
 
 class DB {
-    private $conn ; 
+    private $host; 
+    private $port ; 
+    private $user ; 
+    private $password ; 
+    private $databaseName ;
+    
+    private $conn;
     public $table; 
     public $sql = ""; 
     public $connectionStatus  ;
@@ -10,18 +16,64 @@ class DB {
         $obj->table = $tableName;
         return $obj ; 
     }
-    public function  connect(){
-        $config = getConfig('DATABASE'); 
+    private function config (){
+        $this->host = getConfig('DATABASE')->HOST; 
+        $this->port = getConfig('DATABASE')->PORT; 
+        $this->user = getConfig('DATABASE')->USER; 
+        $this->password = getConfig('DATABASE')->PASSWORD; 
+        $this->databaseName = getConfig('DATABASE')->DATABASE; 
+    }
+    private function  connect($customConfig=false){
+        if(!$customConfig)$this->config();         
         try {
-            $this->conn = new PDO("mysql:host=$config->HOST;dbname=$config->DATABASE", $config->USER, $config->PASSWORD);
+            $this->conn = new PDO("mysql:host=$this->host;port=$this->port;dbname=$this->databaseName", $this->user, $this->password);
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->connectionStatus= "Connected successfully";
         } catch(PDOException $e) {
             $this->connectionStatus= "Connection failed: " . $e->getMessage();
         }
     }
-    public function close(){
+    private function customConnect(array $config){
+        $this->config(); 
+        $allowed = ['host', 'port' , 'user' , 'password' , 'databaseName']; 
+        foreach($config as $key=>$value){
+            if (in_array($key , $allowed)) {
+                switch ($key){
+                    case 'host':
+                        $this->host = $value; 
+                    break ; 
+                    case 'port':
+                        $this->port = $value; 
+                    break ;
+                    case 'user':
+                        $this->user= $value; 
+                    break ;
+                    case 'password':
+                        $this->password = $value; 
+                    break ;
+                    case 'databaseName':
+                        $this->databaseName = $value; 
+                    break ;
+                }
+            }            
+        }
+        $this->connect(true); 
+    }
+    private function close(){
         $this->conn= NULL ; 
+    }
+    public static function createDatabase(string $databaseName , array $tables){    
+        $obj= new self ;
+        $obj->customConnect(['databaseName'=>'']);
+        $obj->conn->query("DROP DATABASE if EXISTS $databaseName"); 
+        $obj->conn->query("CREATE DATABASE  $databaseName"); 
+        $obj->conn->query("USE  $databaseName"); 
+        if ($tables){
+            foreach ($tables as $table){
+                $obj->conn->query($table);
+            }
+        }
+        $obj->close();         
     }
     public function raw (string $statment){
         $this->connect(); 
